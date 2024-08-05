@@ -4,15 +4,9 @@ import './components/component-styles.css'
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { headers } from "next/headers";
 
 const karla = Karla({ subsets: ["latin"] });
 
-function canonical (){
-  const headersList = headers();
-
-  return headersList.get('host')
-}
 
 export const metadata: Metadata = {
   title: "PicScribe | AI Powered Image to Text and Text to Image Solutions",
@@ -20,18 +14,18 @@ export const metadata: Metadata = {
   keywords: "AI image to text, Free AI OCR tool, AI OCR tool, text extraction from images, AI text recognition, document digitization, image description generator, image text translation, translate text in images",
   robots: "index, follow",
   authors: [
-    { name: "PicScribe Team", url: `${canonical()}` }
+    { name: "PicScribe Team", url: `/` }
   ],
   openGraph: {
     title: "PicScribe - AI-Powered Image to Text Solutions",
     description: "PicScribe offers advanced AI-powered tools to extract, translate, and manage text from images. Discover our OCR technology, image-to-text converters, and multilingual capabilities.",
     type: "website",
-    url: `${canonical()}`,
+    url: `/`,
     images: ["/logo.svg"],  // Adjust path to the actual logo image
     siteName: "PicScribe",
   },
   alternates: {
-    canonical: `${canonical()}`,
+    canonical: `/`,
   },
   icons: {
     icon: '/favicon.png',
