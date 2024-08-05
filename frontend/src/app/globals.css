@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: koulen;
+  src: url('/fonts/Koulen/Koulen-Regular.ttf');
+}
+
+body{
+  min-height: 100vh;
+}
+@media (min-width : 550px){
+  nav{
+    display: flex;
+    background-color: #f3f3f3;
+    padding-left: 16px;
+    gap: 10px;
+  }
+  nav .logo-wrapper{
+    border: none;
+    padding: 12px;
+  }
+  nav .logo-wrapper img{
+    max-width: 200px;
+  }
+  nav .menu{
+    flex: 1;
+    align-items: end;
+    padding-right: 12px;
+    border-left: 1px solid #dcdbdb;
+    border-bottom:  3px solid #4db6ac;
+  }
+}
+
+@media (min-width : 750px){
+  nav .menu {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  nav .menu .links{
+    display: flex;
+    position: relative;
+    gap: 20px;
+    flex-direction: row;
+    top: unset;
+    background-color: transparent;
+}
+  footer{
+      margin-top: auto !important;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding-top: 8px !important;
+      padding-bottom: 8px !important;
+  }
+  nav .menu .links a.navlink:hover{
+    color: #008080;
+  }
+  nav .mobile-menu-btn{
+    display: none;
+  }
+}

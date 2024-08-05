@@ -1,0 +1,141 @@
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.upload-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 3px solid #4db6ac;
+  border-radius: 8px;
+  padding: 6px;
+  padding-left: 16px;
+  padding-right: 6px;
+  font-size: 18px;
+  width: 320px;
+  max-width: 80%;
+}
+
+.file-name {
+  margin-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #717171;
+  max-width: 100%;
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-button {
+  background-color: #00bfff;
+  color: white;
+  padding: 4px 16px;
+  padding-top: 5px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+}
+
+.scribe-btn {
+  font-size: 20px;
+  font-family: koulen;
+  background-color: #00CCFF;
+  color: white;
+  padding: 5px 16px;
+  border-radius: 6px;
+  border-bottom: 4px solid #008080;
+}
+
+.scribe-btn:active {
+  border-color: #00CCFF;
+}
+
+.language-picker {
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2) inset;
+}
+.tool-section{
+  margin-bottom: 80px;
+}
+@media (min-width : 550px) {
+
+  .options {
+    justify-content: center;
+  }
+
+  .picture-wrapper {
+    width: 55%;
+    height: 55vh;
+  }
+}
+
+@media (min-width : 750px) {
+  .picture-wrapper {
+    width: 50%;
+    max-width: 350px;
+    min-height: 356px;
+  }
+}
+
+@media (min-width : 950px) {
+  h1 {
+    font-size: 2.2rem !important;
+    margin-top: 2rem !important;
+  }
+
+  .tool-section {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 12px;
+    margin-top: 16px;
+    margin-bottom: 80px;
+  }
+
+  .picture-wrapper {
+    margin: 0;
+  }
+
+  .tool-section .options {
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 16px;
+    border-radius: 10px;
+    border: 2px dashed #00bfff;
+  }
+
+  .tool-section .options button {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding-left: 4px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    border-bottom: 2px dashed #00bfff00;
+    min-width: 113px;
+    transition: 0.15s ease;
+  }
+
+  .tool-section .options button:hover {
+    border-color: #00bfff;
+  }
+
+  .tool-section .options button span.text-black {
+    display: inline;
+    font-style: italic;
+  }
+
+  footer {
+    margin-top: auto !important;
+  }
+}

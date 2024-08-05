@@ -1,0 +1,28 @@
+/* .tools button:hover a span,
+.tools button:hover a .icon,
+.tools button:hover a .arrow-icon{
+    color: #016a6a;
+} */
+
+@media (min-width : 750px){
+    h1{
+        text-align: center;
+    }
+    main .tools{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    main .tools button.coming-soon,
+    main .tools button span.title{
+        white-space: nowrap;
+    }
+    main .tools button{
+        max-width: 420px;
+    }
+    main .tools button.coming-soon{
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+}

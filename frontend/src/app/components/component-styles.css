@@ -1,0 +1,18 @@
+nav{
+    z-index: 9999999;
+}
+nav .menu .nav-home.active{
+    background-color: rgba(215,215,215,0.85);
+}
+nav .menu .navlink{
+    font-weight: 700;
+}
+nav .menu .navlink.active{
+    color: #232323;
+}
+
+@media (max-width : 380px){
+    nav .menu .navlink{
+        font-size: 15px;
+    }
+}
