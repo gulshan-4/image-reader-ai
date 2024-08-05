@@ -7,7 +7,7 @@ export async function POST(req) {
     return NextResponse.json({ error: 'Url is Required' }, { status: 400 });
   }
 
-  const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/generate-description-withurl`, {
+  const response = await fetch(`/api/generate-description-withurl`, {
     method: "POST",
     headers: {
         "Content-Type": "application/json",
