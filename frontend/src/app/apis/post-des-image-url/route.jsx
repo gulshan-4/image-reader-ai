@@ -1,13 +1,14 @@
 import { NextResponse } from 'next/server';
 
 export async function POST(req) {
-  const { url } = await req.json();;
+  const { url } = await req.json();
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
   
   if (!url) {
     return NextResponse.json({ error: 'Url is Required' }, { status: 400 });
   }
 
-  const response = await fetch(`https://picscribe.vercel.app/api/generate-description-withurl`, {
+  const response = await fetch(`${baseUrl}/api/generate-description-withurl`, {
     method: "POST",
     headers: {
         "Content-Type": "application/json",

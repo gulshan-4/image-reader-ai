@@ -1,13 +1,14 @@
 import { NextResponse } from 'next/server';
 
 export async function POST(req) {
-  const { text, targetLang } = await req.json();;
+  const { text, targetLang } = await req.json();
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
   
   if (!text || !targetLang) {
     return NextResponse.json({ error: 'Text and targetLan are required' }, { status: 400 });
   }
 
-  const response = await fetch(`https://picscribe.vercel.app/api/translate-text`, {
+  const response = await fetch(`${baseUrl}/api/translate-text`, {
     method: "POST",
     headers: {
         "Content-Type": "application/json",
