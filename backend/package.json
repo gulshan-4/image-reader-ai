@@ -10,7 +10,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@huggingface/inference": "^2.7.0",
     "@xenova/transformers": "github:xenova/transformers.js#v3",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
