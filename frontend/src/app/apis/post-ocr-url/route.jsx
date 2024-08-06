@@ -7,7 +7,7 @@ export async function POST(req) {
     return NextResponse.json({ error: 'Url is Required' }, { status: 400 });
   }
 
-  const response = await fetch(`/api/generate-ocr-withurl`, {
+  const response = await fetch(`https://picscribe.vercel.app/api/generate-ocr-withurl`, {
     method: "POST",
     headers: {
         "Content-Type": "application/json",

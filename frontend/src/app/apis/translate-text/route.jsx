@@ -7,7 +7,7 @@ export async function POST(req) {
     return NextResponse.json({ error: 'Text and targetLan are required' }, { status: 400 });
   }
 
-  const response = await fetch(`/api/translate-text`, {
+  const response = await fetch(`https://picscribe.vercel.app/api/translate-text`, {
     method: "POST",
     headers: {
         "Content-Type": "application/json",
